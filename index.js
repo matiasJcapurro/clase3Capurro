@@ -1,4 +1,4 @@
-
+let listaPresupuestos = [];
 const presupuesto = (primero) => {
     let persona = prompt('Es una persona fisica? Responsa SI, o NO en caso de ser una empresa');
     let nombre = prompt('Ingrese nombre');
@@ -23,6 +23,7 @@ const presupuesto = (primero) => {
         }
         alert(`Presupuesto para ${nombre} de ${personas} personas y ${horas} horas. Presupuesto total: $${presupuesto}
          Motivo: Evento ${aver}`);
+        listaPresupuestos.push([nombre, presupuesto]);
     }
     else{
         return nombre;
